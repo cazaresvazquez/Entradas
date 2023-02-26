@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Entradas.MainPage">
+
+    <StackLayout>
+        <Label Text="App que muestra como hacer entradas" FontSize="Title"
+               HorizontalTextAlignment="Center" BackgroundColor="#6060B6"
+               TextColor="White">
+        </Label>
+        <Entry x:Name="nombre"></Entry>
+        <Entry x:Name="Ciudad" Placeholder="Ciudad"></Entry>
+        <Entry x:Name="edad" Placeholder="Tu edad" Keyboard="Numeric"></Entry>
+        <Button Text="Ingresar" Clicked="Button_Clicked" 
+                HorizontalOptions="CenterAndExpand"></Button>
+
+        <Entry Completed="Entry_Completed"></Entry>
+        <Label x:Name="ldlNombre" FontSize="Large"></Label>
+        <Label x:Name="lblRespuesta" FontSize="Large"></Label>
+    </StackLayout>
+
+</ContentPage>
